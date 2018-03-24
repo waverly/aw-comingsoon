@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  width: auto;
+  overflow-x: hidden;
+  padding: 100px;
+  font-family: "Source Sans Pro", sans-serif; }
+  body .wrapper {
+    width: 70%; }
+  body .darkgrey {
+    color: #454545; }
+  body .lightgrey {
+    color: #979797; }
+  body .titlespan {
+    text-transform: uppercase;
+    color: #454545; }
+  body .header {
+    margin: 4em 0; }
+  body h1 {
+    font-size: 48px;
+    line-height: 56px;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em; }
+  body h3 {
+    font-size: 20px;
+    color: #979797; }
+  body p {
+    font-size: 14px; }
+  body form {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 100px;
+    justify-content: space-between; }
+    body form label {
+      text-transform: uppercase;
+      font-size: 14px; }
+    body form input {
+      border: none;
+      padding-bottom: 4px;
+      border-bottom: 1px solid black; }
+    body form button {
+      border: 2px solid black;
+      color: black;
+      width: 150px;
+      text-transform: uppercase;
+      font-weight: 800; }
+
+@media screen and (max-width: 1100px) {
+  body .wrapper {
+    width: 100%; } }
+@media screen and (max-width: 675px) {
+  body {
+    padding: 15px; }
+    body .wrapper {
+      width: 100%; }
+    body h1 {
+      font-size: 20px; }
+    body h3 {
+      font-size: 14px; }
+    body .header {
+      margin: 2em 0; }
+    body form {
+      margin-top: 2em; } }
+
+/*# sourceMappingURL=styles.css.map */
