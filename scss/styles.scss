@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 $darkgrey: #454545;
 $lightgrey: #979797;
-$margin: 4em;
+$lightestgrey: #bababa;
+$margin: 3em;
 $margin-mobile: 2em;
+
+:focus,
+:focus-within {
+  border: none;
+  outline: none !important;
+}
 
 body {
   width: auto;
   overflow-x: hidden;
-  padding: 100px;
+  padding: 75px;
   font-family: "Source Sans Pro", sans-serif;
 
   .wrapper {
@@ -20,6 +27,10 @@ body {
 
   .lightgrey {
     color: $lightgrey;
+  }
+
+  .lightestgrey {
+    color: $lightestgrey;
   }
 
   .titlespan {
@@ -62,6 +73,9 @@ body {
       border: none;
       padding-bottom: 4px;
       border-bottom: 1px solid black;
+      &:focus {
+        border-bottom: 1px solid black;
+      }
     }
     button {
       border: 2px solid black;
@@ -69,6 +83,15 @@ body {
       width: 150px;
       text-transform: uppercase;
       font-weight: 800;
+    }
+  }
+  .footer {
+    margin-top: $margin;
+    display: flex;
+    justify-content: flex-start;
+    p {
+      margin-right: 1em;
+      display: inline;
     }
   }
 }
@@ -97,6 +120,10 @@ body {
       margin: $margin-mobile 0;
     }
     form {
+      margin-top: $margin-mobile;
+    }
+
+    .footer {
       margin-top: $margin-mobile;
     }
   }
