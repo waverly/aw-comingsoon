@@ -81,7 +81,8 @@ body {
     body .header {
       margin: 2em 0; }
     body form {
-      margin-top: 2em; }
+      margin-top: 2em;
+      width: 100%; }
     body .footer {
       margin-top: 2em; } }
 
